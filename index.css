@@ -17,6 +17,13 @@
   font-style: normal;
 }
 
+.mini-header {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .regular-title {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
@@ -29,4 +36,20 @@
   font-optical-sizing: auto;
   font-weight: 200;
   font-style: normal;
+  line-height: 2;
+}
+
+.timeline-grid-top {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 5fr 1fr 5fr;
+  padding: 25px;
+  justify-content: center;
+}
+
+.timeline-grid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 5fr 1fr 5fr;
+  justify-content: center;
 }
