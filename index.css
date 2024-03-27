@@ -24,13 +24,6 @@
   font-style: normal;
 }
 
-.regular-title {
-  font-family: "Raleway", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
-
 .regular-text {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
@@ -39,17 +32,18 @@
   line-height: 2;
 }
 
-.timeline-grid-top {
-  margin: 0 auto;
+.timeline {
   display: grid;
-  grid-template-columns: 5fr 1fr 5fr;
-  padding: 25px;
-  justify-content: center;
+  grid-template-columns: 1fr 3px 1fr;
+  margin: 0 auto; /* this is to horizontally center the timeline*/
 }
 
-.timeline-grid {
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 5fr 1fr 5fr;
-  justify-content: center;
+/* note to self: have to go and study this afterwards */
+
+.timeline-point {
+  position: absolute;
+  top: 10%;
+  border-radius: 100%;
+  left: 50%;
+  transform: translateX(-50%);
 }
