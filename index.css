@@ -20,6 +20,13 @@
 .mini-header {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.nav-bar-header {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }

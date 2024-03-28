@@ -20,9 +20,11 @@
       class="gradient-background w-swv mb-16 flex h-20 justify-end shadow-lg"
     >
       <ul class="regular-title my-auto flex flex-row gap-8 px-16">
-        <li id="experience-tab"><a href="#">Experience</a></li>
-        <li>Personal Projects</li>
-        <li>Technologies</li>
+        <li id="experience-tab"><a href="#experience">Experience</a></li>
+        <li id="personal-projects-tab">
+          <a href="#personal-projects">Personal Projects</a>
+        </li>
+        <li id="technologies-tab"><a href="#technologies">Technologies</a></li>
       </ul>
     </div>
 
@@ -76,12 +78,12 @@
       </div>
 
       <!-- second section -->
-      <div id="experience-section">
+      <div id="experience-section" class="mb-10">
         <h1 class="header mb-20 text-7xl">Experience</h1>
         <div class="timeline">
           <div class="flex flex-col justify-center px-8 pb-4">
             <img src="images/leaptech.png" class="" />
-            <p class="mini-header py-auto px-4 text-center">
+            <p class="nav-bar-header py-auto px-4 text-center">
               Nov '23 - June '24
             </p>
           </div>
@@ -89,7 +91,9 @@
             <div class="timeline-point h-5 w-5 bg-gray-300"></div>
           </div>
           <div class="px-8 pb-4">
-            <p class="mini-header mb-2 text-4xl">Software Development Intern</p>
+            <p class="nav-bar-header mb-2 text-4xl">
+              Software Development Intern
+            </p>
             <ul class="reglar-text flex list-disc flex-col gap-2 pl-3.5">
               <li>Performed use-case modelling</li>
               <li>
@@ -103,6 +107,52 @@
             </ul>
           </div>
         </div>
+      </div>
+      <hr class="h-12 border-red-300 px-16" />
+
+      <!-- third section -->
+      <div id="personal-projects-section" class="mb-10">
+        <h1 class="header mb-20 text-right text-7xl">Personal Projects</h1>
+        <div class="grid grid-cols-3 gap-8">
+          <a
+            href="https://github.com/SleepyWoodpecker/GP-GPT"
+            class="flex flex-col items-center justify-center rounded-xl border-2 p-5 shadow-lg"
+          >
+            <img
+              src="images/basically-gp-gpt.jpeg"
+              alt="GP-GPT-image"
+              class="rounded-md"
+            />
+            <p class="mini-header mb-1.5 mt-3 text-2xl">GP-GPT</p>
+            <p class="text-center">
+              An unaligned decoder-only transformer, trained on model essays
+              from students taking H1 General Paper at the Singapore Cambridge
+              'A' Level exams
+            </p>
+          </a>
+          <a
+            href="https://github.com/SleepyWoodpecker/GP-GPT"
+            class="flex flex-col items-center justify-center rounded-xl border-2 p-5 shadow-lg"
+          >
+            <img
+              src="images/basically-gp-gpt.jpeg"
+              alt="GP-GPT-image"
+              class="rounded-md"
+            />
+            <p class="mini-header mb-1.5 mt-3 text-2xl">GP-GPT</p>
+            <p class="text-center">
+              An unaligned decoder-only transformer, trained on model essays
+              from students taking H1 General Paper at the Singapore Cambridge
+              'A' Level exams
+            </p>
+          </a>
+        </div>
+      </div>
+      <hr class="h-12 border-red-300 px-16" />
+
+      <!-- final section -->
+      <div id="technologies-section" class="mb-10">
+        <h1 class="header mb-20 text-7xl">Technologies</h1>
       </div>
     </div>
 
