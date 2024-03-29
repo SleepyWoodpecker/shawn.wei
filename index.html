@@ -20,11 +20,21 @@
       class="gradient-background w-swv mb-16 flex h-20 justify-end shadow-lg"
     >
       <ul class="regular-title my-auto flex flex-row gap-8 px-16">
-        <li id="experience-tab"><a href="#experience">Experience</a></li>
-        <li id="personal-projects-tab">
-          <a href="#personal-projects">Personal Projects</a>
+        <li id="experience-tab">
+          <a href="#experience" class="regular-bolded tracking-wide"
+            >Experience</a
+          >
         </li>
-        <li id="technologies-tab"><a href="#technologies">Technologies</a></li>
+        <li id="personal-projects-tab">
+          <a href="#personal-projects" class="regular-bolded tracking-wide"
+            >Personal Projects</a
+          >
+        </li>
+        <li id="technologies-tab">
+          <a href="#technologies" class="regular-bolded tracking-wide"
+            >Technologies</a
+          >
+        </li>
       </ul>
     </div>
 
@@ -38,19 +48,8 @@
               src="images/self-portrait.jpeg"
               alt="self-portrait"
               class="rounded-full"
+              loading="lazy"
             />
-            <ul class="flex justify-around gap-7">
-              <li class="h-1/6 w-1/6">
-                <a href="https://www.linkedin.com/in/shawn-wei-chew/"
-                  ><img src="images/linkedin.svg" alt="linkedin"
-                /></a>
-              </li>
-              <li class="h-1/6 w-1/6">
-                <a href="https://github.com/SleepyWoodpecker">
-                  <img src="images/github.svg" alt="github" />
-                </a>
-              </li>
-            </ul>
           </div>
 
           <!-- right -->
@@ -58,13 +57,13 @@
             <h1 class="header mb-8 text-7xl">Hello, I'm Shawn Wei</h1>
             <p class="leading-8">
               I am a pragmatic optimist and an aspiring software engineer from
-              the sunny island of Singapore, passionate about solving problems
-              with software. I relish in the intellectual challenge of the job,
-              which requires a unique blend of foresight, systematic and
-              creative thinking.
+              the sunny island of Singapore who is passionate about solving
+              problems with software. I relish in the intellectual challenge of
+              the job, which requires a unique blend of foresight, systematic
+              and creative thinking.
               <br />
               <br />
-              Yet most important to me is the art of communication, which is
+              Most important to me is the art of communication, which is
               unfortunately lossy. Nothing brings me greater joy than
               understanding others and being understood.
               <br />
@@ -82,9 +81,9 @@
         <h1 class="header mb-16 text-7xl">Experience</h1>
         <div class="timeline">
           <div class="flex flex-col justify-center px-8 pb-4">
-            <img src="images/leaptech.png" class="" />
+            <img src="images/leaptech.png" class="" loading="lazy" />
             <p class="nav-bar-header py-auto px-4 text-center">
-              Nov '23 - June '24
+              Nov '23 - Present
             </p>
           </div>
           <div class="relative bg-gray-300">
@@ -95,7 +94,7 @@
               Software Development Intern
             </p>
             <ul class="reglar-text flex list-disc flex-col gap-2 pl-3.5">
-              <li>Performed use-case modelling</li>
+              <li>Performed requirement gathering and use-case modelling</li>
               <li>
                 Created a pipeline to automate the collection, processing and
                 uploading of data for ~1500 renovation firms in Singapore
@@ -122,6 +121,7 @@
               src="images/basically-gp-gpt.jpeg"
               alt="GP-GPT-image"
               class="rounded-md"
+              loading="lazy"
             />
             <p class="mini-header mb-1.5 mt-3 text-2xl">GP-GPT</p>
             <p class="text-center">
@@ -162,7 +162,41 @@
         </div>
       </div>
     </div>
-
+    <div
+      class="reverse-gradient-background w-swv mt-16 flex h-36 justify-center px-8 py-4 shadow-lg"
+    >
+      <div class="flex flex-col gap-10">
+        <p class="regular-bolded text-lg tracking-wide">
+          Looking for collaborators (or repository decorators) for exciting
+          projects?
+        </p>
+        <div class="flex justify-around">
+          <a href="https://www.linkedin.com/in/shawn-wei-chew/"
+            ><img
+              src="images/linkedin.svg"
+              alt="linkedin"
+              class="h-12 w-12"
+              loading="lazy"
+          /></a>
+          <a href="https://github.com/SleepyWoodpecker">
+            <img
+              src="images/github.svg"
+              alt="github"
+              class="h-12 w-12"
+              loading="lazy"
+            />
+          </a>
+          <a href="mailto:shawnweichew@gmail.com">
+            <img
+              src="images/gmail.svg"
+              alt="email"
+              class="h-12 w-12"
+              loading="lazy"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>

@@ -10,6 +10,18 @@
   );
 }
 
+.reverse-gradient-background {
+  background-image: linear-gradient(
+    -70deg,
+    #2a5e98,
+    20%,
+    #cda1cc,
+    #ae8dad,
+    80%,
+    #8ee5ba
+  );
+}
+
 .header {
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
@@ -24,10 +36,10 @@
   font-style: normal;
 }
 
-.nav-bar-header {
-  font-family: "Playfair Display", serif;
+.regular-bolded {
+  font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 
