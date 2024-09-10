@@ -82,15 +82,19 @@ for (const { parentElement, logos } of images) {
       "jusitfy-center",
       "items-center",
       "gap-3",
+      "phone:gap-5",
+      "phone:h-24",
+      "phone:w-24",
     );
 
     const logoDisplay = document.createElement("img");
     logoDisplay.src = `images/${link}`;
     logoDisplay.alt = name;
-    logoDisplay.classList.add("h-16", "w-16");
+    logoDisplay.classList.add("h-16", "w-16", "phone:h-8", "phone:w-8");
     logoDisplay.loading = "lazy";
 
     const description = document.createElement("p");
+    description.classList.add("phone:text-xs");
     description.innerText = name;
 
     wrappingDiv.appendChild(logoDisplay);

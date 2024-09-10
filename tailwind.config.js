@@ -7,6 +7,9 @@ module.exports = {
       sans: ["Raleway", "sans"],
     },
     extend: {},
+    screens: {
+      phone: { max: "470px" },
+    },
   },
   plugins: [],
 };

@@ -16,33 +16,44 @@
   <body>
     <!-- nav bar -->
     <!-- TODO: Might want to extend the width of the Navbar beyond 100% / make it those kind of nice floating navbars that gemini has-->
+    <!-- on the phone view, should just make this a burger menu -->
     <div
-      class="gradient-background w-swv mb-16 flex h-20 justify-end shadow-lg"
+      class="gradient-background phone:justify-center mb-16 flex h-20 w-full justify-end shadow-lg"
     >
-      <ul class="regular-title my-auto flex flex-row gap-8 px-16">
+      <ul
+        class="regular-title phone:gap-8 phone:px-4 my-auto flex flex-row gap-8 px-16"
+      >
         <li id="experience-tab">
-          <a href="#experience" class="regular-bolded tracking-wide"
+          <a
+            href="#experience"
+            class="regular-bolded phone:text-xs tracking-wide"
             >Experience</a
           >
         </li>
         <li id="personal-projects-tab">
-          <a href="#personal-projects" class="regular-bolded tracking-wide"
+          <a
+            href="#personal-projects"
+            class="regular-bolded phone:text-xs tracking-wide"
             >Personal Projects</a
           >
         </li>
         <li id="technologies-tab">
-          <a href="#technologies" class="regular-bolded tracking-wide"
+          <a
+            href="#technologies"
+            class="regular-bolded phone:text-xs tracking-wide"
             >Technologies</a
           >
         </li>
       </ul>
     </div>
 
-    <div id="content-container" class="mx-auto w-full px-16">
+    <div id="content-container" class="phone:px-8 mx-auto w-full px-16">
       <!-- first section -->
       <div>
-        <!-- left -->
-        <div class="mb-16 flex items-center gap-12">
+        <!-- first section photo -->
+        <div
+          class="phone:flex-col phone:justify-between mb-16 flex items-center gap-12"
+        >
           <div class="justify-between-between flex basis-1/3 flex-col gap-5">
             <img
               src="images/self-portrait.jpeg"
@@ -52,10 +63,14 @@
             />
           </div>
 
-          <!-- right -->
+          <!-- first section description -->
           <div class="flex basis-2/3 flex-col justify-evenly">
-            <h1 class="header mb-12 text-7xl">Hello, I'm Shawn Wei</h1>
-            <p class="leading-8">
+            <h1
+              class="header phone:text-3xl phone:text-center phone:mb-6 mb-12 text-7xl"
+            >
+              Hello, I'm Shawn Wei
+            </h1>
+            <p class="phone:text-justify leading-8">
               I'm a pragmatic optimist, and a curious student of Computer
               Science, hailing from the sunny island of Singapore.
               <br />
@@ -64,6 +79,7 @@
               foresight, creativity and methodical thinking required to fully
               harness software's potential as a problem-solving tool.
               <br />
+              <!-- TODO: add a see more section here -->
               As opposed to with computers, it is in the art of communication
               with people that I have found the greatest meaning. Be it with
               clients or teammates, nothing brings me greater joy than
@@ -83,9 +99,13 @@
 
       <!-- second section -->
       <div id="experience-section" class="mb-16 mt-10">
-        <h1 class="header mb-20 text-7xl">Experience</h1>
+        <h1 class="header phone:text-3xl phone:text-center mb-20 text-7xl">
+          Experience
+        </h1>
         <div class="timeline">
-          <div class="flex flex-col justify-center px-8 pb-4">
+          <div
+            class="phone:pl-0.5 phone:justify-start phone:pt-16 flex flex-col justify-center px-8 pb-4"
+          >
             <img src="images/leaptech.png" class="" loading="lazy" />
             <p class="nav-bar-header py-auto px-4 text-center">
               Nov '23 - Apr '24
@@ -94,11 +114,13 @@
           <div class="relative bg-gray-300">
             <div class="timeline-point h-5 w-5 bg-gray-300"></div>
           </div>
-          <div class="px-8 pb-4">
-            <p class="nav-bar-header mb-2 text-4xl">
+          <div class="phone:pr-0 px-8 pb-4">
+            <p class="nav-bar-header phone:text-xl mb-2 text-4xl">
               Software Development Intern
             </p>
-            <ul class="reglar-text flex list-disc flex-col gap-2 pl-3.5">
+            <ul
+              class="reglar-text phone:pl-0.5 flex list-disc flex-col gap-2 pl-3.5"
+            >
               <li>
                 Conducted requirements analysis and use-case modeling to define
                 application functionalities and workflows
@@ -121,8 +143,12 @@
 
       <!-- third section -->
       <div id="personal-projects-section" class="mb-16 mt-10">
-        <h1 class="header mb-20 text-right text-7xl">Personal Projects</h1>
-        <div class="grid grid-cols-3 gap-8">
+        <h1
+          class="header phone:text-3xl phone:text-center mb-20 text-right text-7xl"
+        >
+          Personal Projects
+        </h1>
+        <div class="phone:grid-cols-1 grid grid-cols-3 gap-8">
           <a
             href="https://github.com/SleepyWoodpecker/GP-GPT"
             class="flex flex-col items-center justify-center rounded-xl border-2 p-5 shadow-lg"
@@ -133,8 +159,8 @@
               class="rounded-md"
               loading="lazy"
             />
-            <p class="mini-header mb-1.5 mt-3 text-2xl">GP-GPT</p>
-            <p class="text-center">
+            <p class="mini-header phone:text-lg mb-1.5 mt-3 text-2xl">GP-GPT</p>
+            <p class="phone:text-sm text-center">
               An unaligned decoder-only transformer, trained on model essays
               from students taking H1 General Paper at the Singapore Cambridge
               'A' Level exams
@@ -146,27 +172,29 @@
 
       <!-- final section -->
       <div id="technologies-section" class="mt-10">
-        <h1 class="header mb-20 text-7xl">Technologies</h1>
+        <h1 class="header phone:text-3xl phone:text-center mb-20 text-7xl">
+          Technologies
+        </h1>
         <div class="flex flex-col gap-16">
           <div id="fronted-technologies">
             <p class="mini-header mb-5 text-xl">Frontend</p>
             <div
               id="frontend-logos"
-              class="flex items-center justify-evenly"
+              class="phone:justify-between flex items-center justify-evenly"
             ></div>
           </div>
           <div id="backend-technologies">
             <p class="mini-header mb-5 text-xl">Backend</p>
             <div
               id="backend-logos"
-              class="flex items-center justify-evenly"
+              class="phone:justify-between flex items-center justify-evenly"
             ></div>
           </div>
           <div id="dev-tools">
             <p class="mini-header mb-5 text-xl">Dev Tools And More</p>
             <div
               id="dev-tools-and-more-logos"
-              class="flex items-center justify-evenly"
+              class="phone:justify-between flex items-center justify-evenly"
             ></div>
           </div>
         </div>
@@ -178,7 +206,9 @@
       class="reverse-gradient-background w-swv mt-16 flex h-36 justify-center px-8 py-4 shadow-lg"
     >
       <div class="flex flex-col gap-10">
-        <p class="regular-bolded text-lg tracking-wide">
+        <p
+          class="regular-bolded phone:text-sm text-justify text-lg tracking-wide"
+        >
           Looking for collaborators (or repository decorators) for exciting
           projects?
         </p>
@@ -187,14 +217,14 @@
             ><img
               src="images/linkedin.svg"
               alt="linkedin"
-              class="h-12 w-12"
+              class="phone:h-8 phone:w-8 h-12 w-12"
               loading="lazy"
           /></a>
           <a href="https://github.com/SleepyWoodpecker">
             <img
               src="images/github.svg"
               alt="github"
-              class="h-12 w-12"
+              class="phone:h-8 phone:w-8 h-12 w-12"
               loading="lazy"
             />
           </a>
@@ -202,7 +232,7 @@
             <img
               src="images/gmail.svg"
               alt="email"
-              class="h-12 w-12"
+              class="phone:h-8 phone:w-8 h-12 w-12"
               loading="lazy"
             />
           </a>
