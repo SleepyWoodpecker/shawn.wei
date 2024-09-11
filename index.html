@@ -18,7 +18,7 @@
     <!-- TODO: Might want to extend the width of the Navbar beyond 100% / make it those kind of nice floating navbars that gemini has-->
     <!-- on the phone view, should just make this a burger menu -->
     <div
-      class="gradient-background phone:justify-center mb-16 flex h-20 w-full justify-end shadow-lg"
+      class="gradient-background phone:justify-center phone:h-16 phone:mb-8 mb-16 flex h-20 w-full justify-end shadow-lg"
     >
       <ul
         class="regular-title phone:gap-8 phone:px-4 my-auto flex flex-row gap-8 px-16"
@@ -26,21 +26,21 @@
         <li id="experience-tab">
           <a
             href="#experience"
-            class="regular-bolded phone:text-xs tracking-wide"
+            class="regular-bolded phone:text-xs phone:hidden tracking-wide"
             >Experience</a
           >
         </li>
         <li id="personal-projects-tab">
           <a
             href="#personal-projects"
-            class="regular-bolded phone:text-xs tracking-wide"
+            class="regular-bolded phone:text-xs phone:hidden tracking-wide"
             >Personal Projects</a
           >
         </li>
         <li id="technologies-tab">
           <a
             href="#technologies"
-            class="regular-bolded phone:text-xs tracking-wide"
+            class="regular-bolded phone:text-xs phone:hidden tracking-wide"
             >Technologies</a
           >
         </li>
@@ -95,16 +95,17 @@
           </div>
         </div>
       </div>
-      <hr class="mx-auto h-0.5 w-1/6 border-gray-200 px-16" />
+      <hr class="mx-auto h-0.5 w-1/6 border-gray-200 px-16 my-12" />
 
       <!-- second section -->
-      <div id="experience-section" class="mb-16 mt-10">
+      <div id="experience-section" class="mb-16">
         <h1 class="header phone:text-3xl phone:text-center mb-20 text-7xl">
           Experience
         </h1>
         <div class="timeline">
+          <!-- leaptech experience -->
           <div
-            class="phone:pl-0.5 phone:justify-start phone:pt-16 flex flex-col justify-center px-8 pb-4"
+            class="phone:pl-0.5 phone:justify-start phone:pt-16 flex flex-col px-8 pb-4"
           >
             <img src="images/leaptech.png" class="" loading="lazy" />
             <p class="nav-bar-header py-auto px-4 text-center">
@@ -114,12 +115,12 @@
           <div class="relative bg-gray-300">
             <div class="timeline-point h-5 w-5 bg-gray-300"></div>
           </div>
-          <div class="phone:pr-0 px-8 pb-4">
+          <div class="phone:pr-0 px-8 pb-4 mb-8">
             <p class="nav-bar-header phone:text-xl mb-2 text-4xl">
               Software Development Intern
             </p>
             <ul
-              class="reglar-text phone:pl-0.5 flex list-disc flex-col gap-2 pl-3.5"
+              class="reglar-text phone:pl-0.5 flex list-disc flex-col gap-2 pl-3.5 text-justify"
             >
               <li>
                 Conducted requirements analysis and use-case modeling to define
@@ -137,12 +138,46 @@
               </li>
             </ul>
           </div>
-        </div>
+
+          <!-- NS experience -->
+          <div
+            class="phone:pl-0.5 phone:justify-start phone:pt-16 flex flex-col px-8 pb-4"
+          >
+            <!-- TODO: fill up with telebot image -->
+            <img src="images/leaptech.png" class="" loading="lazy" />
+            <p class="nav-bar-header py-auto px-4 text-center">
+              Aug '22 - Oct '23
+            </p>
+          </div>
+          <div class="relative bg-gray-300">
+            <div class="timeline-point h-5 w-5 bg-gray-300"></div>
+          </div>
+          <div class="phone:pr-0 px-8 pb-4 mb-4">
+            <p class="nav-bar-header phone:text-xl mb-2 text-4xl">
+              Fullstack developer (Innovation Team)
+            </p>
+            <ul
+              class="reglar-text phone:pl-0.5 flex list-disc flex-col gap-2 pl-3.5 text-justify"
+            >
+              <li>
+                Collaborated in-depth with peers and military superiors to identify and
+                prioritize use-cases for software-based solutions that addressed pain points and operational challenges
+              </li>
+              <li>
+                Developed and designed a centralised storehouse management web application with React, NodeJS and Firebase, reducing time spent on tedious and 
+                error-prone admin work by 10%
+              </li>
+              <li>
+                Created, from scratch, a telegram bot to aid new soldiers in the process of unit induction
+              </li>
+              <li>Represented my military unit at a UI/UX conference to inform and improve the design of an e-mobilization system</li>
+            </ul>
+          </div>
       </div>
-      <hr class="mx-auto h-0.5 w-1/6 border-gray-200 px-16" />
+      <hr class="mx-auto h-0.5 w-1/6 border-gray-200 px-16 my-12" />
 
       <!-- third section -->
-      <div id="personal-projects-section" class="mb-16 mt-10">
+      <div id="personal-projects-section" class="mb-16">
         <h1
           class="header phone:text-3xl phone:text-center mb-20 text-right text-7xl"
         >
