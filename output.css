@@ -679,6 +679,10 @@ video {
   margin: 0.25rem;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -744,6 +748,10 @@ video {
 
 .mt-3 {
   margin-top: 0.75rem;
+}
+
+.mr-3 {
+  margin-right: 0.75rem;
 }
 
 .box-border {
@@ -901,6 +909,18 @@ video {
   height: 18rem;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-full {
+  height: 100%;
+}
+
 .w-1 {
   width: 0.25rem;
 }
@@ -951,6 +971,14 @@ video {
 
 .w-72 {
   width: 18rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .flex-shrink {
@@ -1986,6 +2014,11 @@ video {
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
 }
 
+.bg-red-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
 .decoration-slice {
   -webkit-box-decoration-break: slice;
           box-decoration-break: slice;
@@ -2102,6 +2135,18 @@ video {
 
 .p-5 {
   padding: 1.25rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-0 {
+  padding: 0px;
+}
+
+.p-0\.5 {
+  padding: 0.125rem;
 }
 
 .px-16 {
@@ -2664,12 +2709,20 @@ video {
 }
 
 @media (max-width: 470px) {
+  .phone\:visible {
+    visibility: visible;
+  }
+
   .phone\:mb-6 {
     margin-bottom: 1.5rem;
   }
 
   .phone\:mb-8 {
     margin-bottom: 2rem;
+  }
+
+  .phone\:block {
+    display: block;
   }
 
   .phone\:hidden {
@@ -2694,6 +2747,10 @@ video {
 
   .phone\:w-8 {
     width: 2rem;
+  }
+
+  .phone\:w-16 {
+    width: 4rem;
   }
 
   .phone\:grid-cols-1 {

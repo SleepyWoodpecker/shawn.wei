@@ -1,28 +1,57 @@
 // scrolling
+
+// // for hamburger menu that appears on the phone view
+const hamburgerMenu = document.querySelector("#hamburger-menu");
+const hamburgerMenuOptions = document.querySelector("#hamburger-menu-options");
+
 const experienceTab = document.querySelector("#experience-tab");
+const experienceTabMobile = document.querySelector("#experience-tab-mobile");
 const experienceSection = document.querySelector("#experience-section");
 
 const personalProjectsTab = document.querySelector("#personal-projects-tab");
+const personalProjectsTabMobile = document.querySelector(
+  "#personal-projects-tab-mobile",
+);
 const personalProjectsSection = document.querySelector(
   "#personal-projects-section",
 );
 
 const technologiesTab = document.querySelector("#technologies-tab");
+const technologiesTabMobile = document.querySelector(
+  "#technologies-tab-mobile",
+);
 const technologiesSection = document.querySelector("#technologies-section");
 
 const tabSectionPairs = [
-  { tab: experienceTab, section: experienceSection },
-  { tab: personalProjectsTab, section: personalProjectsSection },
-  { tab: technologiesTab, section: technologiesSection },
+  { tab: experienceTab, section: experienceSection, type: "regular" },
+  { tab: experienceTabMobile, section: experienceSection, type: "mobile" },
+
+  {
+    tab: personalProjectsTab,
+    section: personalProjectsSection,
+    type: "regular",
+  },
+  {
+    tab: personalProjectsTabMobile,
+    section: personalProjectsSection,
+    type: "mobile",
+  },
+  { tab: technologiesTab, section: technologiesSection, type: "regular" },
+  { tab: technologiesTabMobile, section: technologiesSection, type: "mobile" },
 ];
 
-for (const { tab, section } of tabSectionPairs) {
+for (const { tab, section, type } of tabSectionPairs) {
+  console.log(tab, section, type);
   tab.addEventListener("click", () => {
     section.scrollIntoView({
       behavior: "smooth",
       block: "start",
       inline: "center",
     });
+
+    if (type === "mobile") {
+      hamburgerMenuOptions.style.display = "none";
+    }
   });
 }
 

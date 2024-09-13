@@ -16,12 +16,44 @@
   <body>
     <!-- nav bar -->
     <!-- TODO: Might want to extend the width of the Navbar beyond 100% / make it those kind of nice floating navbars that gemini has-->
-    <!-- on the phone view, should just make this a burger menu -->
+
+    <!-- hamburger menu options that open up -->
+    <div class="w-full h-full bg-red-300 absolute" id="hamburger-menu-options">
+      <ul>
+        <li id="experience-tab-mobile">
+          <a
+            href="#experience"
+            class="regular-bolded tracking-wide"
+            >Experience</a
+          >
+        </li>
+        <li id="personal-projects-tab-mobile">
+          <a
+            href="#personal-projects"
+            class="regular-bolded tracking-wide"
+            >Personal Projects</a
+          >
+        </li>
+        <li id="technologies-tab-mobile">
+          <a
+            href="#technologies"
+            class="regular-bolded tracking-wide"
+            >Technologies</a
+          >
+        </li>
+      </ul>
+    </div>
+
     <div
       class="gradient-background phone:justify-center phone:h-16 phone:mb-8 mb-16 flex h-20 w-full justify-end shadow-lg"
     >
+      <div class="hidden phone:block w-full h-full">
+        <div class="flex justify-end items-center w-full h-full">
+          <img src="images/hamburger_menu.svg" alt="hamburger-menu" class="h-10 w-10 p-0.5 mr-3" id="hamburger-menu">
+        </div>
+      </div>
       <ul
-        class="regular-title phone:gap-8 phone:px-4 my-auto flex flex-row gap-8 px-16"
+        class="regular-title phone:gap-8 phone:px-4 my-auto flex flex-row gap-8 px-16 phone:hidden"
       >
         <li id="experience-tab">
           <a
@@ -80,17 +112,19 @@
               harness software's potential as a problem-solving tool.
               <br />
               <!-- TODO: add a see more section here -->
-              As opposed to with computers, it is in the art of communication
-              with people that I have found the greatest meaning. Be it with
-              clients or teammates, nothing brings me greater joy than
-              understanding others and being understood. After all, I believe
-              that impactful software finds its foundations in a clearly defined
-              problem.
-              <br />
-              As a hobby, I enjoy decorating my repositories with AI-generated
-              images and memes. I also happen to be a huge (I'd like to think
-              biggest) fan of
-              <a href="https://www.yoasobi-music.jp/profile">YOASOBI</a> :D.
+              <span class="phone:hidden">
+                As opposed to with computers, it is in the art of communication
+                with people that I have found the greatest meaning. Be it with
+                clients or teammates, nothing brings me greater joy than
+                understanding others and being understood. After all, I believe
+                that impactful software finds its foundations in a clearly defined
+                problem.
+                <br />
+                As a hobby, I enjoy decorating my repositories with AI-generated
+                images and memes. I also happen to be a huge (I'd like to think
+                biggest) fan of
+                <a href="https://www.yoasobi-music.jp/profile">YOASOBI</a> :D.
+            </span>
             </p>
           </div>
         </div>
@@ -144,7 +178,7 @@
             class="phone:pl-0.5 phone:justify-start phone:pt-16 flex flex-col px-8 pb-4 items-center"
           >
             <!-- TODO: fill up with telebot image -->
-            <img src="images/sbe_inno_nobg.png" class="h-72 w-72 mb-4" loading="lazy" />
+            <img src="images/sbe_inno_nobg.png" class="h-72 w-72 mb-4 phone:h-16 phone:w-16" loading="lazy" />
             <p class="nav-bar-header py-auto px-4 text-center">
               Aug '22 - Oct '23
             </p>
