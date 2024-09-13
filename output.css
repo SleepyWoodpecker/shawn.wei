@@ -684,19 +684,14 @@ video {
   margin-right: auto;
 }
 
-.my-auto {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .my-12 {
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .mb-1 {
@@ -723,8 +718,16 @@ video {
   margin-bottom: 5rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .mt-10 {
@@ -741,22 +744,6 @@ video {
 
 .mt-3 {
   margin-top: 0.75rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
-.mt-4 {
-  margin-top: 1rem;
-}
-
-.mt-8 {
-  margin-top: 2rem;
-}
-
-.mb-8 {
-  margin-bottom: 2rem;
 }
 
 .box-border {
@@ -890,6 +877,10 @@ video {
   height: 5rem;
 }
 
+.h-32 {
+  height: 8rem;
+}
+
 .h-36 {
   height: 9rem;
 }
@@ -898,8 +889,16 @@ video {
   height: 1.25rem;
 }
 
-.h-24 {
-  height: 6rem;
+.h-64 {
+  height: 16rem;
+}
+
+.h-80 {
+  height: 20rem;
+}
+
+.h-72 {
+  height: 18rem;
 }
 
 .w-1 {
@@ -916,6 +915,10 @@ video {
 
 .w-16 {
   width: 4rem;
+}
+
+.w-32 {
+  width: 8rem;
 }
 
 .w-5 {
@@ -938,8 +941,16 @@ video {
   width: 100%;
 }
 
-.w-24 {
-  width: 6rem;
+.w-64 {
+  width: 16rem;
+}
+
+.w-80 {
+  width: 20rem;
+}
+
+.w-72 {
+  width: 18rem;
 }
 
 .flex-shrink {
@@ -1290,18 +1301,6 @@ video {
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-.grid-rows-3 {
-  grid-template-rows: repeat(3, minmax(0, 1fr));
-}
-
-.grid-rows-4 {
-  grid-template-rows: repeat(4, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -2665,10 +2664,6 @@ video {
 }
 
 @media (max-width: 470px) {
-  .phone\:invisible {
-    visibility: hidden;
-  }
-
   .phone\:mb-6 {
     margin-bottom: 1.5rem;
   }
@@ -2681,44 +2676,28 @@ video {
     display: none;
   }
 
-  .phone\:h-8 {
-    height: 2rem;
-  }
-
-  .phone\:h-12 {
-    height: 3rem;
+  .phone\:h-16 {
+    height: 4rem;
   }
 
   .phone\:h-24 {
     height: 6rem;
   }
 
-  .phone\:h-10 {
-    height: 2.5rem;
-  }
-
-  .phone\:h-16 {
-    height: 4rem;
-  }
-
-  .phone\:w-8 {
-    width: 2rem;
-  }
-
-  .phone\:w-12 {
-    width: 3rem;
+  .phone\:h-8 {
+    height: 2rem;
   }
 
   .phone\:w-24 {
     width: 6rem;
   }
 
-  .phone\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
+  .phone\:w-8 {
+    width: 2rem;
   }
 
-  .phone\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  .phone\:grid-cols-1 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .phone\:flex-col {
@@ -2737,33 +2716,12 @@ video {
     justify-content: space-between;
   }
 
-  .phone\:gap-8 {
-    gap: 2rem;
-  }
-
-  .phone\:gap-2 {
-    gap: 0.5rem;
-  }
-
-  .phone\:gap-3 {
-    gap: 0.75rem;
-  }
-
-  .phone\:gap-1 {
-    gap: 0.25rem;
-  }
-
-  .phone\:gap-4 {
-    gap: 1rem;
-  }
-
   .phone\:gap-5 {
     gap: 1.25rem;
   }
 
-  .phone\:gap-x-4 {
-    -moz-column-gap: 1rem;
-         column-gap: 1rem;
+  .phone\:gap-8 {
+    gap: 2rem;
   }
 
   .phone\:px-4 {
@@ -2805,16 +2763,6 @@ video {
     line-height: 2.25rem;
   }
 
-  .phone\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-  }
-
-  .phone\:text-xs {
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-
   .phone\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
@@ -2823,5 +2771,15 @@ video {
   .phone\:text-sm {
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+
+  .phone\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .phone\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 }
