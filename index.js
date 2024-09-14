@@ -3,6 +3,9 @@
 // // for hamburger menu that appears on the phone view
 const hamburgerMenu = document.querySelector("#hamburger-menu");
 const hamburgerMenuOptions = document.querySelector("#hamburger-menu-options");
+const closeHamburgerMenuOptions = document.querySelector(
+  "#close-hamburger-menu-options",
+);
 
 const experienceTab = document.querySelector("#experience-tab");
 const experienceTabMobile = document.querySelector("#experience-tab-mobile");
@@ -40,8 +43,15 @@ const tabSectionPairs = [
   { tab: technologiesTabMobile, section: technologiesSection, type: "mobile" },
 ];
 
+hamburgerMenu.addEventListener("click", () => {
+  hamburgerMenuOptions.style.display = "block";
+});
+
+closeHamburgerMenuOptions.addEventListener("click", () => {
+  hamburgerMenuOptions.style.display = "none";
+});
+
 for (const { tab, section, type } of tabSectionPairs) {
-  console.log(tab, section, type);
   tab.addEventListener("click", () => {
     section.scrollIntoView({
       behavior: "smooth",

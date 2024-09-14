@@ -8,8 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="output.css" />
   </head>
@@ -18,63 +17,56 @@
     <!-- TODO: Might want to extend the width of the Navbar beyond 100% / make it those kind of nice floating navbars that gemini has-->
 
     <!-- hamburger menu options that open up -->
-    <div class="w-full h-full bg-red-300 absolute" id="hamburger-menu-options">
-      <ul>
-        <li id="experience-tab-mobile">
-          <a
-            href="#experience"
-            class="regular-bolded tracking-wide"
-            >Experience</a
-          >
-        </li>
-        <li id="personal-projects-tab-mobile">
-          <a
-            href="#personal-projects"
-            class="regular-bolded tracking-wide"
-            >Personal Projects</a
-          >
-        </li>
-        <li id="technologies-tab-mobile">
-          <a
-            href="#technologies"
-            class="regular-bolded tracking-wide"
-            >Technologies</a
-          >
-        </li>
-      </ul>
+    <div class="w-full h-full bg-red-300 absolute hidden"
+      id="hamburger-menu-options">
+      <div class="w-full h-full">
+        <!-- need to find out how to disable scrolling when the menu is open -->
+        <img src="images/cross.svg" class="h-12 w-12 p-4" id="close-hamburger-menu-options"/>
+        <ul class="flex flex-col justify-between items-center">
+          <li id="experience-tab-mobile">
+            <a
+              href="#experience"
+              class="regular-bolded tracking-wide">Experience</a>
+          </li>
+          <li id="personal-projects-tab-mobile">
+            <a
+              href="#personal-projects"
+              class="regular-bolded tracking-wide">Personal Projects</a>
+          </li>
+          <li id="technologies-tab-mobile">
+            <a
+              href="#technologies"
+              class="regular-bolded tracking-wide">Technologies</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div
-      class="gradient-background phone:justify-center phone:h-16 phone:mb-8 mb-16 flex h-20 w-full justify-end shadow-lg"
-    >
+      class="gradient-background phone:justify-center phone:h-16 phone:mb-8 mb-16 flex h-20 w-full justify-end shadow-lg">
       <div class="hidden phone:block w-full h-full">
         <div class="flex justify-end items-center w-full h-full">
-          <img src="images/hamburger_menu.svg" alt="hamburger-menu" class="h-10 w-10 p-0.5 mr-3" id="hamburger-menu">
+          <img src="images/hamburger_menu.svg" alt="hamburger-menu"
+            class="h-10 w-10 p-0.5 mr-3" id="hamburger-menu">
         </div>
       </div>
       <ul
-        class="regular-title phone:gap-8 phone:px-4 my-auto flex flex-row gap-8 px-16 phone:hidden"
-      >
+        class="regular-title phone:gap-8 phone:px-4 my-auto flex flex-row gap-8 px-16 phone:hidden">
         <li id="experience-tab">
           <a
             href="#experience"
-            class="regular-bolded phone:text-xs phone:hidden tracking-wide"
-            >Experience</a
-          >
+            class="regular-bolded phone:text-xs phone:hidden tracking-wide">Experience</a>
         </li>
         <li id="personal-projects-tab">
           <a
             href="#personal-projects"
-            class="regular-bolded phone:text-xs phone:hidden tracking-wide"
-            >Personal Projects</a
-          >
+            class="regular-bolded phone:text-xs phone:hidden tracking-wide">Personal
+            Projects</a>
         </li>
         <li id="technologies-tab">
           <a
             href="#technologies"
-            class="regular-bolded phone:text-xs phone:hidden tracking-wide"
-            >Technologies</a
-          >
+            class="regular-bolded phone:text-xs phone:hidden tracking-wide">Technologies</a>
         </li>
       </ul>
     </div>
@@ -84,22 +76,19 @@
       <div>
         <!-- first section photo -->
         <div
-          class="phone:flex-col phone:justify-between mb-16 flex items-center gap-12"
-        >
+          class="phone:flex-col phone:justify-between mb-16 flex items-center gap-12">
           <div class="justify-between-between flex basis-1/3 flex-col gap-5">
             <img
               src="images/self-portrait.jpeg"
               alt="self-portrait"
               class="rounded-full"
-              loading="lazy"
-            />
+              loading="lazy" />
           </div>
 
           <!-- first section description -->
           <div class="flex basis-2/3 flex-col justify-evenly">
             <h1
-              class="header phone:text-3xl phone:text-center phone:mb-6 mb-12 text-7xl"
-            >
+              class="header phone:text-3xl phone:text-center phone:mb-6 mb-12 text-7xl">
               Hello, I'm Shawn Wei
             </h1>
             <p class="leading-8 text-justify">
@@ -117,14 +106,15 @@
                 with people that I have found the greatest meaning. Be it with
                 clients or teammates, nothing brings me greater joy than
                 understanding others and being understood. After all, I believe
-                that impactful software finds its foundations in a clearly defined
+                that impactful software finds its foundations in a clearly
+                defined
                 problem.
                 <br />
                 As a hobby, I enjoy decorating my repositories with AI-generated
                 images and memes. I also happen to be a huge (I'd like to think
                 biggest) fan of
                 <a href="https://www.yoasobi-music.jp/profile">YOASOBI</a> :D.
-            </span>
+              </span>
             </p>
           </div>
         </div>
@@ -139,8 +129,7 @@
         <div class="timeline">
           <!-- leaptech experience -->
           <div
-            class="phone:pl-0.5 phone:justify-start phone:pt-16 flex flex-col px-8 pb-4"
-          >
+            class="phone:pl-0.5 phone:justify-start phone:pt-16 flex flex-col px-8 pb-4">
             <img src="images/leaptech.png" class="mb-4" loading="lazy" />
             <p class="nav-bar-header py-auto px-4 text-center">
               Nov '23 - Apr '24
@@ -154,8 +143,7 @@
               Software Development Intern
             </p>
             <ul
-              class="reglar-text phone:pl-0.5 flex list-disc flex-col gap-2 pl-3.5 text-justify"
-            >
+              class="reglar-text phone:pl-0.5 flex list-disc flex-col gap-2 pl-3.5 text-justify">
               <li>
                 Conducted requirements analysis and use-case modeling to define
                 application functionalities and workflows
@@ -175,10 +163,10 @@
 
           <!-- NS experience -->
           <div
-            class="phone:pl-0.5 phone:justify-start phone:pt-16 flex flex-col px-8 pb-4 items-center"
-          >
+            class="phone:pl-0.5 phone:justify-start phone:pt-16 flex flex-col px-8 pb-4 items-center">
             <!-- TODO: fill up with telebot image -->
-            <img src="images/sbe_inno_nobg.png" class="h-72 w-72 mb-4 phone:h-16 phone:w-16" loading="lazy" />
+            <img src="images/sbe_inno_nobg.png"
+              class="h-72 w-72 mb-4 phone:h-16 phone:w-16" loading="lazy" />
             <p class="nav-bar-header py-auto px-4 text-center">
               Aug '22 - Oct '23
             </p>
@@ -191,137 +179,131 @@
               Fullstack developer (Innovation Team)
             </p>
             <ul
-              class="reglar-text phone:pl-0.5 flex list-disc flex-col gap-2 pl-3.5 text-justify"
-            >
+              class="reglar-text phone:pl-0.5 flex list-disc flex-col gap-2 pl-3.5 text-justify">
               <li>
-                Collaborated in-depth with peers and military superiors to identify and
-                prioritize use-cases for software-based solutions that addressed pain points and operational challenges
+                Collaborated in-depth with peers and military superiors to
+                identify and
+                prioritize use-cases for software-based solutions that addressed
+                pain points and operational challenges
               </li>
               <li>
-                Developed and designed a centralised storehouse management web application with React, NodeJS and Firebase, reducing time spent on tedious and 
+                Developed and designed a centralised storehouse management web
+                application with React, NodeJS and Firebase, reducing time spent
+                on tedious and
                 error-prone admin work by 10%
               </li>
               <li>
-                Created, from scratch, a telegram bot to aid new soldiers in the process of unit induction
+                Created, from scratch, a telegram bot to aid new soldiers in the
+                process of unit induction
               </li>
-              <li>Represented my military unit at a UI/UX conference to inform and improve the design of an e-mobilization system</li>
+              <li>Represented my military unit at a UI/UX conference to inform
+                and improve the design of an e-mobilization system</li>
             </ul>
           </div>
-      </div>
-      <hr class="mx-auto h-0.5 w-1/6 border-gray-200 px-16 my-12" />
-
-      <!-- third section -->
-      <div id="personal-projects-section" class="mb-16">
-        <h1
-          class="header phone:text-3xl phone:text-center mb-20 text-right text-7xl"
-        >
-          Personal Projects
-        </h1>
-        <div class="phone:grid-cols-1 grid grid-cols-3 gap-8">
-          <a
-            href="https://github.com/SleepyWoodpecker/GP-GPT"
-            class="flex flex-col items-center justify-center rounded-xl border-2 p-5 shadow-lg"
-          >
-            <img
-              src="images/basically-gp-gpt.jpeg"
-              alt="GP-GPT-image"
-              class="rounded-md"
-              loading="lazy"
-            />
-            <p class="mini-header phone:text-lg mb-1.5 mt-3 text-2xl">GP-GPT</p>
-            <p class="phone:text-sm text-center">
-              An unaligned decoder-only transformer, trained on model essays
-              from students taking H1 General Paper at the Singapore Cambridge
-              'A' Level exams
-            </p>
-          </a>
-          <a
-           href="https://www.figma.com/design/URRj0eadlLw0Ott9d2w8CL/Mockups?node-id=215-104&t=KYO8ZKzVtNdVdwXS-1" 
-           class="flex flex-col items-center justify-center rounded-xl border-2 p-5 shadow-lg"
-          >
-          <img
-              src="images/mottainai.png"
-              alt="mottainai-logo"
-              class="rounded-md"
-              loading="lazy"
-            />
-          <p class="mini-header phone:text-lg mb-1.5 mt-3 text-2xl">Mottainai</p>
-          <p class="phone:text-sm text-center">
-            A high-fidelity mockup of an application which aims encourage environmentally responsible habits among users
-          </p>
-          </a>
         </div>
-      </div>
-      <hr class="mx-auto h-0.5 w-1/6 border-gray-200 px-16" />
+        <hr class="mx-auto h-0.5 w-1/6 border-gray-200 px-16 my-12" />
 
-      <!-- final section -->
-      <div id="technologies-section" class="mt-10">
-        <h1 class="header phone:text-3xl phone:text-center mb-20 text-7xl">
-          Technologies
-        </h1>
-        <div class="flex flex-col gap-16">
-          <div id="fronted-technologies">
-            <p class="mini-header mb-5 text-xl">Frontend</p>
-            <div
-              id="frontend-logos"
-              class="phone:justify-between flex items-center justify-evenly"
-            ></div>
+        <!-- third section -->
+        <div id="personal-projects-section" class="mb-16">
+          <h1
+            class="header phone:text-3xl phone:text-center mb-20 text-right text-7xl">
+            Personal Projects
+          </h1>
+          <div class="phone:grid-cols-1 grid grid-cols-3 gap-8">
+            <a
+              href="https://github.com/SleepyWoodpecker/GP-GPT"
+              class="flex flex-col items-center justify-center rounded-xl border-2 p-5 shadow-lg">
+              <img
+                src="images/basically-gp-gpt.jpeg"
+                alt="GP-GPT-image"
+                class="rounded-md"
+                loading="lazy" />
+              <p
+                class="mini-header phone:text-lg mb-1.5 mt-3 text-2xl">GP-GPT</p>
+              <p class="phone:text-sm text-center">
+                An unaligned decoder-only transformer, trained on model essays
+                from students taking H1 General Paper at the Singapore Cambridge
+                'A' Level exams
+              </p>
+            </a>
+            <a
+              href="https://www.figma.com/design/URRj0eadlLw0Ott9d2w8CL/Mockups?node-id=215-104&t=KYO8ZKzVtNdVdwXS-1"
+              class="flex flex-col items-center justify-center rounded-xl border-2 p-5 shadow-lg">
+              <img
+                src="images/mottainai.png"
+                alt="mottainai-logo"
+                class="rounded-md"
+                loading="lazy" />
+              <p
+                class="mini-header phone:text-lg mb-1.5 mt-3 text-2xl">Mottainai</p>
+              <p class="phone:text-sm text-center">
+                A high-fidelity mockup of an application which aims encourage
+                environmentally responsible habits among users
+              </p>
+            </a>
           </div>
-          <div id="backend-technologies">
-            <p class="mini-header mb-5 text-xl">Backend</p>
-            <div
-              id="backend-logos"
-              class="phone:justify-between flex items-center justify-evenly"
-            ></div>
-          </div>
-          <div id="dev-tools">
-            <p class="mini-header mb-5 text-xl">Dev Tools And More</p>
-            <div
-              id="dev-tools-and-more-logos"
-              class="phone:justify-between flex items-center justify-evenly"
-            ></div>
+        </div>
+        <hr class="mx-auto h-0.5 w-1/6 border-gray-200 px-16" />
+
+        <!-- final section -->
+        <div id="technologies-section" class="mt-10">
+          <h1 class="header phone:text-3xl phone:text-center mb-20 text-7xl">
+            Technologies
+          </h1>
+          <div class="flex flex-col gap-16">
+            <div id="fronted-technologies">
+              <p class="mini-header mb-5 text-xl">Frontend</p>
+              <div
+                id="frontend-logos"
+                class="phone:justify-between flex items-center justify-evenly"></div>
+            </div>
+            <div id="backend-technologies">
+              <p class="mini-header mb-5 text-xl">Backend</p>
+              <div
+                id="backend-logos"
+                class="phone:justify-between flex items-center justify-evenly"></div>
+            </div>
+            <div id="dev-tools">
+              <p class="mini-header mb-5 text-xl">Dev Tools And More</p>
+              <div
+                id="dev-tools-and-more-logos"
+                class="phone:justify-between flex items-center justify-evenly"></div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </div>
     <!-- footer -->
     <div
-      class="reverse-gradient-background mt-16 flex h-36 justify-center px-8 py-4 shadow-lg w-full"
-    >
+      class="reverse-gradient-background mt-16 flex h-36 justify-center px-8 py-4 shadow-lg w-full">
       <div class="flex flex-col gap-10">
         <p
-          class="regular-bolded phone:text-sm text-justify text-lg tracking-wide"
-        >
+          class="regular-bolded phone:text-sm text-justify text-lg tracking-wide">
           Looking for collaborators (or repository decorators) for exciting
           projects?
         </p>
         <div class="flex justify-around">
-          <a href="https://www.linkedin.com/in/shawn-wei-chew/"
-            ><img
+          <a href="https://www.linkedin.com/in/shawn-wei-chew/"><img
               src="images/linkedin.svg"
               alt="linkedin"
               class="phone:h-8 phone:w-8 h-12 w-12"
-              loading="lazy"
-          /></a>
+              loading="lazy" /></a>
           <a href="https://github.com/SleepyWoodpecker">
             <img
               src="images/github.svg"
               alt="github"
               class="phone:h-8 phone:w-8 h-12 w-12"
-              loading="lazy"
-            />
+              loading="lazy" />
           </a>
           <a href="mailto:shawnweichew@gmail.com">
             <img
               src="images/gmail.svg"
               alt="email"
               class="phone:h-8 phone:w-8 h-12 w-12"
-              loading="lazy"
-            />
+              loading="lazy" />
           </a>
         </div>
       </div>
-    <script src="index.js"></script>
-  </body>
-</html>
+      <script src="index.js"></script>
+    </body>
+  </html>
