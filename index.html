@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="output.css" />
   </head>
@@ -17,81 +18,101 @@
     <!-- TODO: Might want to extend the width of the Navbar beyond 100% / make it those kind of nice floating navbars that gemini has-->
 
     <!-- hamburger menu options that open up -->
-    <div class="w-full h-full bg-red-300 absolute hidden"
-      id="hamburger-menu-options">
-      <div class="w-full h-full">
-        <!-- need to find out how to disable scrolling when the menu is open -->
-        <img src="images/cross.svg" class="h-12 w-12 p-4" id="close-hamburger-menu-options"/>
-        <ul class="flex flex-col justify-between items-center">
+    <div class="absolute hidden h-full w-full" id="hamburger-menu-options">
+      <div class="opacity-98 flex h-full w-full flex-col bg-white">
+        <img
+          src="images/cross.svg"
+          class="mr-5 mt-5 h-6 w-6 self-end p-0.5"
+          id="close-hamburger-menu-options"
+        />
+        <ul
+          class="flex h-full flex-col items-center justify-start gap-36 pt-52"
+        >
           <li id="experience-tab-mobile">
-            <a
-              href="#experience"
-              class="regular-bolded tracking-wide">Experience</a>
+            <a href="#experience" class="regular-bolded text-xl tracking-wide"
+              >Experience</a
+            >
           </li>
           <li id="personal-projects-tab-mobile">
             <a
               href="#personal-projects"
-              class="regular-bolded tracking-wide">Personal Projects</a>
+              class="regular-bolded text-xl tracking-wide"
+              >Personal Projects</a
+            >
           </li>
           <li id="technologies-tab-mobile">
-            <a
-              href="#technologies"
-              class="regular-bolded tracking-wide">Technologies</a>
+            <a href="#technologies" class="regular-bolded text-xl tracking-wide"
+              >Technologies</a
+            >
           </li>
         </ul>
       </div>
     </div>
 
     <div
-      class="gradient-background phone:justify-center phone:h-16 phone:mb-8 mb-16 flex h-20 w-full justify-end shadow-lg">
-      <div class="hidden phone:block w-full h-full">
-        <div class="flex justify-end items-center w-full h-full">
-          <img src="images/hamburger_menu.svg" alt="hamburger-menu"
-            class="h-10 w-10 p-0.5 mr-3" id="hamburger-menu">
+      class="gradient-background mb-16 flex h-20 w-full justify-end shadow-lg phone:mb-8 phone:h-16 phone:justify-center"
+    >
+      <div class="hidden h-full w-full phone:block">
+        <div class="flex h-full w-full items-center justify-end">
+          <img
+            src="images/hamburger_menu.svg"
+            alt="hamburger-menu"
+            class="mr-3 h-10 w-10 p-0.5"
+            id="hamburger-menu"
+          />
         </div>
       </div>
       <ul
-        class="regular-title phone:gap-8 phone:px-4 my-auto flex flex-row gap-8 px-16 phone:hidden">
+        class="regular-title my-auto flex flex-row gap-8 px-16 phone:hidden phone:gap-8 phone:px-4"
+      >
         <li id="experience-tab">
           <a
             href="#experience"
-            class="regular-bolded phone:text-xs phone:hidden tracking-wide">Experience</a>
+            class="regular-bolded tracking-wide phone:hidden"
+            >Experience</a
+          >
         </li>
         <li id="personal-projects-tab">
           <a
             href="#personal-projects"
-            class="regular-bolded phone:text-xs phone:hidden tracking-wide">Personal
-            Projects</a>
+            class="regular-bolded tracking-wide phone:hidden"
+            >Personal Projects</a
+          >
         </li>
         <li id="technologies-tab">
           <a
             href="#technologies"
-            class="regular-bolded phone:text-xs phone:hidden tracking-wide">Technologies</a>
+            class="regular-bolded tracking-wide phone:hidden"
+            >Technologies</a
+          >
         </li>
       </ul>
     </div>
 
-    <div id="content-container" class="phone:px-8 mx-auto w-full px-16">
+    <div id="content-container" class="mx-auto w-full px-16 phone:px-8">
       <!-- first section -->
       <div>
         <!-- first section photo -->
         <div
-          class="phone:flex-col phone:justify-between mb-16 flex items-center gap-12">
+          class="mb-16 flex items-center gap-12 phone:flex-col phone:justify-between"
+        >
           <div class="justify-between-between flex basis-1/3 flex-col gap-5">
             <img
               src="images/self-portrait.jpeg"
               alt="self-portrait"
               class="rounded-full"
-              loading="lazy" />
+              loading="lazy"
+            />
           </div>
 
           <!-- first section description -->
           <div class="flex basis-2/3 flex-col justify-evenly">
             <h1
-              class="header phone:text-3xl phone:text-center phone:mb-6 mb-12 text-7xl">
+              class="header mb-12 text-7xl phone:mb-6 phone:text-center phone:text-3xl"
+            >
               Hello, I'm Shawn Wei
             </h1>
-            <p class="leading-8 text-justify">
+            <p class="text-justify leading-8">
               I'm a pragmatic optimist, and a curious student of Computer
               Science, hailing from the sunny island of Singapore.
               <br />
@@ -107,8 +128,7 @@
                 clients or teammates, nothing brings me greater joy than
                 understanding others and being understood. After all, I believe
                 that impactful software finds its foundations in a clearly
-                defined
-                problem.
+                defined problem.
                 <br />
                 As a hobby, I enjoy decorating my repositories with AI-generated
                 images and memes. I also happen to be a huge (I'd like to think
@@ -119,17 +139,18 @@
           </div>
         </div>
       </div>
-      <hr class="mx-auto h-0.5 w-1/6 border-gray-200 px-16 my-12" />
+      <hr class="mx-auto my-12 h-0.5 w-1/6 border-gray-200 px-16" />
 
       <!-- second section -->
       <div id="experience-section" class="mb-16">
-        <h1 class="header phone:text-3xl phone:text-center mb-20 text-7xl">
+        <h1 class="header mb-20 text-7xl phone:text-center phone:text-3xl">
           Experience
         </h1>
         <div class="timeline">
           <!-- leaptech experience -->
           <div
-            class="phone:pl-0.5 phone:justify-start phone:pt-16 flex flex-col px-8 pb-4">
+            class="flex flex-col px-8 pb-4 phone:justify-start phone:pl-0.5 phone:pt-16"
+          >
             <img src="images/leaptech.png" class="mb-4" loading="lazy" />
             <p class="nav-bar-header py-auto px-4 text-center">
               Nov '23 - Apr '24
@@ -138,12 +159,13 @@
           <div class="relative bg-gray-300">
             <div class="timeline-point h-5 w-5 bg-gray-300"></div>
           </div>
-          <div class="phone:pr-0 px-8 pb-4 mb-8">
-            <p class="nav-bar-header phone:text-xl mb-2 text-4xl">
+          <div class="mb-8 px-8 pb-4 phone:pr-0">
+            <p class="nav-bar-header mb-2 text-4xl phone:text-xl">
               Software Development Intern
             </p>
             <ul
-              class="reglar-text phone:pl-0.5 flex list-disc flex-col gap-2 pl-3.5 text-justify">
+              class="reglar-text flex list-disc flex-col gap-2 pl-3.5 text-justify phone:pl-0.5"
+            >
               <li>
                 Conducted requirements analysis and use-case modeling to define
                 application functionalities and workflows
@@ -163,10 +185,14 @@
 
           <!-- NS experience -->
           <div
-            class="phone:pl-0.5 phone:justify-start phone:pt-16 flex flex-col px-8 pb-4 items-center">
+            class="flex flex-col items-center px-8 pb-4 phone:justify-start phone:pl-0.5 phone:pt-16"
+          >
             <!-- TODO: fill up with telebot image -->
-            <img src="images/sbe_inno_nobg.png"
-              class="h-72 w-72 mb-4 phone:h-16 phone:w-16" loading="lazy" />
+            <img
+              src="images/sbe_inno_nobg.png"
+              class="mb-4 h-72 w-72 phone:h-16 phone:w-16"
+              loading="lazy"
+            />
             <p class="nav-bar-header py-auto px-4 text-center">
               Aug '22 - Oct '23
             </p>
@@ -174,53 +200,58 @@
           <div class="relative bg-gray-300">
             <div class="timeline-point h-5 w-5 bg-gray-300"></div>
           </div>
-          <div class="phone:pr-0 px-8 pb-4 mb-4">
-            <p class="nav-bar-header phone:text-xl mb-2 text-4xl">
+          <div class="mb-4 px-8 pb-4 phone:pr-0">
+            <p class="nav-bar-header mb-2 text-4xl phone:text-xl">
               Fullstack developer (Innovation Team)
             </p>
             <ul
-              class="reglar-text phone:pl-0.5 flex list-disc flex-col gap-2 pl-3.5 text-justify">
+              class="reglar-text flex list-disc flex-col gap-2 pl-3.5 text-justify phone:pl-0.5"
+            >
               <li>
                 Collaborated in-depth with peers and military superiors to
-                identify and
-                prioritize use-cases for software-based solutions that addressed
-                pain points and operational challenges
+                identify and prioritize use-cases for software-based solutions
+                that addressed pain points and operational challenges
               </li>
               <li>
                 Developed and designed a centralised storehouse management web
                 application with React, NodeJS and Firebase, reducing time spent
-                on tedious and
-                error-prone admin work by 10%
+                on tedious and error-prone admin work by 10%
               </li>
               <li>
                 Created, from scratch, a telegram bot to aid new soldiers in the
                 process of unit induction
               </li>
-              <li>Represented my military unit at a UI/UX conference to inform
-                and improve the design of an e-mobilization system</li>
+              <li>
+                Represented my military unit at a UI/UX conference to inform and
+                improve the design of an e-mobilization system
+              </li>
             </ul>
           </div>
         </div>
-        <hr class="mx-auto h-0.5 w-1/6 border-gray-200 px-16 my-12" />
+        <hr class="mx-auto my-12 h-0.5 w-1/6 border-gray-200 px-16" />
 
         <!-- third section -->
         <div id="personal-projects-section" class="mb-16">
           <h1
-            class="header phone:text-3xl phone:text-center mb-20 text-right text-7xl">
+            class="header mb-20 text-right text-7xl phone:text-center phone:text-3xl"
+          >
             Personal Projects
           </h1>
-          <div class="phone:grid-cols-1 grid grid-cols-3 gap-8">
+          <div class="grid grid-cols-3 gap-8 phone:grid-cols-1">
             <a
               href="https://github.com/SleepyWoodpecker/GP-GPT"
-              class="flex flex-col items-center justify-center rounded-xl border-2 p-5 shadow-lg">
+              class="flex flex-col items-center justify-center rounded-xl border-2 p-5 shadow-lg"
+            >
               <img
                 src="images/basically-gp-gpt.jpeg"
                 alt="GP-GPT-image"
                 class="rounded-md"
-                loading="lazy" />
-              <p
-                class="mini-header phone:text-lg mb-1.5 mt-3 text-2xl">GP-GPT</p>
-              <p class="phone:text-sm text-center">
+                loading="lazy"
+              />
+              <p class="mini-header mb-1.5 mt-3 text-2xl phone:text-lg">
+                GP-GPT
+              </p>
+              <p class="text-center phone:text-sm">
                 An unaligned decoder-only transformer, trained on model essays
                 from students taking H1 General Paper at the Singapore Cambridge
                 'A' Level exams
@@ -228,15 +259,18 @@
             </a>
             <a
               href="https://www.figma.com/design/URRj0eadlLw0Ott9d2w8CL/Mockups?node-id=215-104&t=KYO8ZKzVtNdVdwXS-1"
-              class="flex flex-col items-center justify-center rounded-xl border-2 p-5 shadow-lg">
+              class="flex flex-col items-center justify-center rounded-xl border-2 p-5 shadow-lg"
+            >
               <img
                 src="images/mottainai.png"
                 alt="mottainai-logo"
                 class="rounded-md"
-                loading="lazy" />
-              <p
-                class="mini-header phone:text-lg mb-1.5 mt-3 text-2xl">Mottainai</p>
-              <p class="phone:text-sm text-center">
+                loading="lazy"
+              />
+              <p class="mini-header mb-1.5 mt-3 text-2xl phone:text-lg">
+                Mottainai
+              </p>
+              <p class="text-center phone:text-sm">
                 A high-fidelity mockup of an application which aims encourage
                 environmentally responsible habits among users
               </p>
@@ -247,7 +281,7 @@
 
         <!-- final section -->
         <div id="technologies-section" class="mt-10">
-          <h1 class="header phone:text-3xl phone:text-center mb-20 text-7xl">
+          <h1 class="header mb-20 text-7xl phone:text-center phone:text-3xl">
             Technologies
           </h1>
           <div class="flex flex-col gap-16">
@@ -255,19 +289,22 @@
               <p class="mini-header mb-5 text-xl">Frontend</p>
               <div
                 id="frontend-logos"
-                class="phone:justify-between flex items-center justify-evenly"></div>
+                class="flex items-center justify-evenly phone:justify-between"
+              ></div>
             </div>
             <div id="backend-technologies">
               <p class="mini-header mb-5 text-xl">Backend</p>
               <div
                 id="backend-logos"
-                class="phone:justify-between flex items-center justify-evenly"></div>
+                class="flex items-center justify-evenly phone:justify-between"
+              ></div>
             </div>
             <div id="dev-tools">
               <p class="mini-header mb-5 text-xl">Dev Tools And More</p>
               <div
                 id="dev-tools-and-more-logos"
-                class="phone:justify-between flex items-center justify-evenly"></div>
+                class="flex items-center justify-evenly phone:justify-between"
+              ></div>
             </div>
           </div>
         </div>
@@ -275,35 +312,43 @@
     </div>
     <!-- footer -->
     <div
-      class="reverse-gradient-background mt-16 flex h-36 justify-center px-8 py-4 shadow-lg w-full">
+      class="reverse-gradient-background mt-16 flex h-36 w-full justify-center px-8 py-4 shadow-lg"
+    >
       <div class="flex flex-col gap-10">
         <p
-          class="regular-bolded phone:text-sm text-justify text-lg tracking-wide">
+          class="regular-bolded text-justify text-lg tracking-wide phone:text-sm"
+        >
           Looking for collaborators (or repository decorators) for exciting
           projects?
         </p>
         <div class="flex justify-around">
-          <a href="https://www.linkedin.com/in/shawn-wei-chew/"><img
+          <a href="https://www.linkedin.com/in/shawn-wei-chew/"
+            ><img
               src="images/linkedin.svg"
               alt="linkedin"
-              class="phone:h-8 phone:w-8 h-12 w-12"
-              loading="lazy" /></a>
+              class="h-12 w-12 phone:h-8 phone:w-8"
+              loading="lazy"
+          /></a>
           <a href="https://github.com/SleepyWoodpecker">
             <img
               src="images/github.svg"
               alt="github"
-              class="phone:h-8 phone:w-8 h-12 w-12"
-              loading="lazy" />
+              class="h-12 w-12 phone:h-8 phone:w-8"
+              loading="lazy"
+            />
           </a>
           <a href="mailto:shawnweichew@gmail.com">
             <img
               src="images/gmail.svg"
               alt="email"
-              class="phone:h-8 phone:w-8 h-12 w-12"
-              loading="lazy" />
+              class="h-12 w-12 phone:h-8 phone:w-8"
+              loading="lazy"
+            />
           </a>
         </div>
       </div>
-      <script src="index.js"></script>
-    </body>
-  </html>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -43,12 +43,16 @@ const tabSectionPairs = [
   { tab: technologiesTabMobile, section: technologiesSection, type: "mobile" },
 ];
 
+const body = document.querySelector("body");
+
 hamburgerMenu.addEventListener("click", () => {
   hamburgerMenuOptions.style.display = "block";
+  body.style.overflowY = "hidden";
 });
 
 closeHamburgerMenuOptions.addEventListener("click", () => {
   hamburgerMenuOptions.style.display = "none";
+  body.style.overflowY = "scroll";
 });
 
 for (const { tab, section, type } of tabSectionPairs) {
@@ -61,6 +65,7 @@ for (const { tab, section, type } of tabSectionPairs) {
 
     if (type === "mobile") {
       hamburgerMenuOptions.style.display = "none";
+      body.style.overflowY = "scroll";
     }
   });
 }

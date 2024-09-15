@@ -70,3 +70,8 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+/* custom opacity for the hamburger menu */
+.opacity-98 {
+  opacity: 97%;
+}
