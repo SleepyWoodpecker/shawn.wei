@@ -47,6 +47,7 @@ const body = document.querySelector("body");
 
 hamburgerMenu.addEventListener("click", () => {
   hamburgerMenuOptions.style.display = "block";
+  // this still does not seem to work :()
   body.style.overflowY = "hidden";
 });
 
