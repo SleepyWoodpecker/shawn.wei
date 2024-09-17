@@ -47,27 +47,28 @@ const body = document.querySelector("body");
 
 hamburgerMenu.addEventListener("click", () => {
   hamburgerMenuOptions.style.display = "block";
-  // this still does not seem to work :()
-  body.style.overflowY = "hidden";
+  // body.style.overflowY = "hidden";
+  body.style.position = "fixed";
 });
 
 closeHamburgerMenuOptions.addEventListener("click", () => {
   hamburgerMenuOptions.style.display = "none";
-  body.style.overflowY = "scroll";
+  // body.style.overflowY = "scroll";
+  body.style.position = "static";
 });
 
 for (const { tab, section, type } of tabSectionPairs) {
   tab.addEventListener("click", () => {
+    if (type === "mobile") {
+      hamburgerMenuOptions.style.display = "none";
+      body.style.position = "static";
+    }
+
     section.scrollIntoView({
       behavior: "smooth",
       block: "start",
       inline: "center",
     });
-
-    if (type === "mobile") {
-      hamburgerMenuOptions.style.display = "none";
-      body.style.overflowY = "scroll";
-    }
   });
 }
 
