@@ -1,1 +1,2 @@
-Find out more about the SleepyWoodpecker! This site's mobile view is still under development though 😔
+Find out more about the SleepyWoodpecker!
+https://sleepywoodpecker.github.io/shawn.wei/
